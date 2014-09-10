@@ -1,0 +1,11 @@
+.env
+
+/vendor
+/app/wp
+/app/plugins
+/app/mu-plugins
+/app/db.php
+/app/themes/twentyfourteen
+
+.DS_Store
+Thumbs.db

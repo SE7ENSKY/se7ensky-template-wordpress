@@ -1,0 +1,72 @@
+{
+	"name": "Se7enSky/se7ensky-template-wordpress",
+	"authors": [
+		{
+			"name": "Ivan Kravchenko",
+			"email": "i@se7ensky.com"
+		},
+		{
+			"name": "SE7ENSKY studio",
+			"email": "info@se7ensky.com"
+		}
+	],
+	"require": {
+		"ext-memcached": "*",
+		"ext-ftp": "*",
+
+		"wordpress/wordpress": "4.0",
+		"wpackagist-theme/twentyfourteen": "*",
+		"wpackagist-plugin/root-relative-urls": "*",
+		"wpackagist-plugin/cyr2lat": "*",
+		"Se7enSky/wp-remotefs": "*",
+		"wpackagist-plugin/query-monitor": "*"
+	},
+	"extra": {
+		"webroot-dir": "app/wp",
+		"webroot-package": "wordpress/wordpress",
+		"installer-paths": {
+			"app/plugins/{$name}/": ["type:wordpress-plugin"],
+			"app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+			"app/themes/{$name}/": ["type:wordpress-theme"]
+		}
+	},
+	"require-dev": {
+		"heroku/heroku-buildpack-php": "*"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://wpackagist.org"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "wordpress/wordpress",
+				"type": "webroot",
+				"version": "4.0",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/WordPress/WordPress/archive/4.0.zip"
+				},
+				"require": {
+					"fancyguy/webroot-installer": "~1.1"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "Se7enSky/wp-remotefs",
+				"type": "wordpress-plugin",
+				"version": "1.5.1",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/Se7enSky/wp-remotefs/archive/master.zip"
+				},
+				"require": {
+					"fancyguy/webroot-installer": "~1.1"
+				}
+			}
+		}
+	]
+}

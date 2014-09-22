@@ -10,6 +10,7 @@ Deploy to Heroku
 ```bash
 hk create
 hk addon-add cleardb
+hk addon-add memcachier
 hk set \
     WP_AUTH_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
     WP_SECURE_AUTH_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "56db90f7f032afab9c85af1bac22c45a",
+    "hash": "120716c1d2ccf61cc4249d1603d43abf",
     "packages": [
         {
             "name": "Se7enSky/wp-remotefs",
@@ -167,6 +167,29 @@
             "type": "webroot"
         },
         {
+            "name": "wpackagist-plugin/codepress-admin-columns",
+            "version": "2.2.6.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/codepress-admin-columns/",
+                "reference": "tags/2.2.6.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/codepress-admin-columns.2.2.6.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/codepress-admin-columns": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/codepress-admin-columns/"
+        },
+        {
             "name": "wpackagist-plugin/cyr2lat",
             "version": "3.2",
             "source": {
@@ -188,6 +211,52 @@
             },
             "type": "wordpress-plugin",
             "homepage": "http://wordpress.org/plugins/cyr2lat/"
+        },
+        {
+            "name": "wpackagist-plugin/memcachier",
+            "version": "1.0.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/memcachier/",
+                "reference": "tags/1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/memcachier.1.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/memcachier": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/memcachier/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.5.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.5.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/polylang.1.5.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/polylang": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/polylang/"
         },
         {
             "name": "wpackagist-plugin/query-monitor",
@@ -236,24 +305,50 @@
             "homepage": "http://wordpress.org/plugins/root-relative-urls/"
         },
         {
-            "name": "wpackagist-theme/twentyfourteen",
-            "version": "1.2",
+            "name": "wpackagist-plugin/types",
+            "version": "1.6.3",
             "source": {
                 "type": "svn",
-                "url": "http://themes.svn.wordpress.org/twentyfourteen/",
-                "reference": "1.2"
+                "url": "http://plugins.svn.wordpress.org/types/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://wordpress.org/themes/download/twentyfourteen.1.2.zip",
+                "url": "http://downloads.wordpress.org/plugin/types.zip",
                 "reference": null,
                 "shasum": null
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "type": "wordpress-theme",
-            "homepage": "http://wordpress.org/themes/twentyfourteen/"
+            "replace": {
+                "wpackagist/types": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/types/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "1.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/1.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/wordpress-seo.1.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "replace": {
+                "wpackagist/wordpress-seo": "self.version"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [

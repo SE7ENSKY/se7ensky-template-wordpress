@@ -15,11 +15,17 @@
 		"ext-ftp": "*",
 
 		"wordpress/wordpress": "4.0",
-		"wpackagist-theme/twentyfourteen": "*",
 		"wpackagist-plugin/root-relative-urls": "*",
 		"wpackagist-plugin/cyr2lat": "*",
 		"Se7enSky/wp-remotefs": "*",
-		"wpackagist-plugin/query-monitor": "*"
+		"wpackagist-plugin/query-monitor": "*",
+
+		"wpackagist-plugin/memcachier": "*",
+		
+		"wpackagist-plugin/codepress-admin-columns": "*",
+		"wpackagist-plugin/types": "*",
+		"wpackagist-plugin/wordpress-seo": "*",
+		"wpackagist-plugin/polylang": "*"
 	},
 	"extra": {
 		"webroot-dir": "app/wp",

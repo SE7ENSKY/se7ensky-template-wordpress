@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "120716c1d2ccf61cc4249d1603d43abf",
+    "hash": "e156bf9d425b28a525208c11f37edbd0",
     "packages": [
         {
             "name": "Se7enSky/wp-remotefs",
@@ -403,7 +403,8 @@
     "prefer-stable": false,
     "platform": {
         "ext-memcached": "*",
-        "ext-ftp": "*"
+        "ext-ftp": "*",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }

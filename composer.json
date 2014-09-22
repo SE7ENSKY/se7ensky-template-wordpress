@@ -13,6 +13,7 @@
 	"require": {
 		"ext-memcached": "*",
 		"ext-ftp": "*",
+		"ext-gd": "*",
 
 		"wordpress/wordpress": "4.0",
 		"wpackagist-plugin/root-relative-urls": "*",
@@ -21,7 +22,7 @@
 		"wpackagist-plugin/query-monitor": "*",
 
 		"wpackagist-plugin/memcachier": "*",
-		
+
 		"wpackagist-plugin/codepress-admin-columns": "*",
 		"wpackagist-plugin/types": "*",
 		"wpackagist-plugin/wordpress-seo": "*",

@@ -29,7 +29,8 @@ This project can be run locally for development with as-close-as-possible manner
 
 ### Prerequisites
 Basic requirements:
-* PHP >= 5.5.14 (with memcached and ftp extensions)
+* PHP >= 5.5.14 (with FPM, memcached and ftp extensions)
+* Nginx
 * Composer (installed globally)
 * foreman or nf
 

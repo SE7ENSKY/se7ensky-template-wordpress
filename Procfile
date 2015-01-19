@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-nginx -C app_nginx.conf app
+web: vendor/bin/heroku-php-nginx -C app_nginx.conf -F app_php-fpm.conf app

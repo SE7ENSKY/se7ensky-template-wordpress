@@ -13,8 +13,9 @@
 	"require": {
 		"ext-memcached": "*",
 		"ext-ftp": "*",
+		"ext-gd": "*",
 
-		"wordpress/wordpress": "4.0",
+		"wordpress/wordpress": "4.1",
 		"wpackagist-theme/twentyfourteen": "*",
 		"wpackagist-plugin/root-relative-urls": "*",
 		"wpackagist-plugin/cyr2lat": "*",
@@ -43,10 +44,10 @@
 			"package": {
 				"name": "wordpress/wordpress",
 				"type": "webroot",
-				"version": "4.0",
+				"version": "4.1",
 				"dist": {
 					"type": "zip",
-					"url": "https://github.com/WordPress/WordPress/archive/4.0.zip"
+					"url": "https://github.com/WordPress/WordPress/archive/4.1.zip"
 				},
 				"require": {
 					"fancyguy/webroot-installer": "~1.1"
@@ -58,7 +59,7 @@
 			"package": {
 				"name": "Se7enSky/wp-remotefs",
 				"type": "wordpress-plugin",
-				"version": "1.5.1",
+				"version": "1.5.3",
 				"dist": {
 					"type": "zip",
 					"url": "https://github.com/Se7enSky/wp-remotefs/archive/master.zip"

@@ -11,14 +11,14 @@ Deploy to Heroku
 hk create
 hk addon-add cleardb
 hk set \
-    WP_AUTH_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_SECURE_AUTH_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_LOGGED_IN_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_NONCE_KEY=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_AUTH_SALT=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_SECURE_AUTH_SALT=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_LOGGED_IN_SALT=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`\
-    WP_NONCE_SALT=`dd if=/dev/random bs=1 count=96 2>/dev/null | base64`
+    WP_AUTH_KEY=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_SECURE_AUTH_KEY=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_LOGGED_IN_KEY=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_NONCE_KEY=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_AUTH_SALT=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_SECURE_AUTH_SALT=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_LOGGED_IN_SALT=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`\
+    WP_NONCE_SALT=`dd if=/dev/urandom bs=1 count=32 2>/dev/null | base64`
 git push heroku master
 hk open
 ```
